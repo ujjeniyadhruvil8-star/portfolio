@@ -1588,3 +1588,222 @@ footer {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
+
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
+   ========================================================================== */
+
+/* --- TABLET & LAPTOP SCREEN BREAKPOINT (max-width: 960px) --- */
+@media (max-width: 960px) {
+  /* Navbar Collapsible Menu */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(10, 10, 14, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.8);
+    padding: 1.5rem 2rem;
+    gap: 1.2rem;
+    z-index: 1001;
+  }
+
+  .nav-links.nav-menu-open {
+    display: flex;
+    animation: slideDownMenu 0.25s ease-out forwards;
+  }
+
+  @keyframes slideDownMenu {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .nav-link.active::after {
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+  }
+
+  /* Hamburger active cross animation */
+  .hamburger-btn.is-active .hamburger-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger-btn.is-active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.is-active .hamburger-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  /* Bento Hero 3-Column to 1-Column Stack */
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .bento-card-center {
+    max-height: 420px;
+  }
+
+  .portrait-visual {
+    height: 320px;
+  }
+
+  /* About Section 2-Column Split to 1-Column */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Secondary Projects Grid 3-Column to 1-Column */
+  .secondary-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Systems Matrix Grid 3x2 to 2x3 */
+  .matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Metric Boxes in Flagship */
+  .metric-boxes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- MOBILE PHONE BREAKPOINT (max-width: 680px) --- */
+@media (max-width: 680px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  #intro {
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-backdrop-text {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+    letter-spacing: 0.05em;
+  }
+
+  .hero-name {
+    font-size: 2.6rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 0.8rem;
+  }
+
+  .featured-project-card {
+    padding: 1.4rem;
+  }
+
+  .featured-title {
+    font-size: 1.35rem;
+  }
+
+  .metric-boxes-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .layer-tabs-list {
+    gap: 0.4rem;
+  }
+
+  .layer-tab {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.7rem;
+    flex: 1 1 calc(50% - 0.4rem);
+    text-align: center;
+  }
+
+  .detail-specs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Matrix Filters and Cards on Mobile */
+  .matrix-filter-bar {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.72rem;
+  }
+
+  .matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Form on Mobile */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.4rem;
+  }
+
+  .contact-links-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-link-pill {
+    justify-content: center;
+  }
+
+  /* Footer on Mobile */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.9rem;
+  }
+
+  .footer-details {
+    display: block;
+    margin-top: 0.3rem;
+  }
+
+  /* Cursor swarm toggle info on mobile */
+  .cursor-toggle-btn {
+    display: none;
+  }
+}
