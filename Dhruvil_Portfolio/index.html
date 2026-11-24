@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Dhruvil Ujjeniya — AI & Technology Enthusiast, Aspiring Developer, Chemical Engineering Diploma holder & B.Tech AIML student." />
+  <title>Dhruvil Ujjeniya | AI &amp; Technology Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- White-Theme Dynamic Background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow ambient-glow--indigo" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--cyan" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--rose" aria-hidden="true"></div>
+
+  <!-- Header & Navigation (Name Only, No Code Logo) -->
+  <header id="site-header">
+    <nav id="navbar" class="container nav-container" aria-label="Primary Navigation">
+      <a href="#home" class="brand-logo">
+        <span class="brand-name gradient-text-brand">Dhruvil Ujjeniya</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+        <li><a href="#interests" class="nav-link" data-section="interests">Vision</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <span class="theme-icon theme-icon--sun" aria-hidden="true">☀️</span>
+          <span class="theme-icon theme-icon--moon" aria-hidden="true">🌙</span>
+        </button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-bind="metaLine">Roll No: 2603842047 · Division DD · Gujarat, India</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text-animated" data-bind="fullName">Dhruvil Ujjeniya</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="subtitle-accent" data-bind="title">AI &amp; Technology Enthusiast | Aspiring Developer</span>
+          </p>
+
+          <p class="hero-intro" data-bind="intro">
+            I am Dhruvil Ujjeniya, an aspiring technology enthusiast with an academic background in Chemical Engineering and a strong interest in Artificial Intelligence, programming and computational science. I enjoy exploring how technology can solve real-world problems, building innovative projects and continuously expanding my technical knowledge. My goal is to combine my interests in engineering, chemistry and artificial intelligence to develop meaningful technological solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <button id="download-cv-btn" type="button" class="btn btn-secondary">Download CV</button>
+            <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+          </div>
+
+          <div class="hero-tags" aria-label="Core focus areas">
+            <span class="mini-tag mini-tag--indigo">B.Tech AIML (Present)</span>
+            <span class="mini-tag mini-tag--cyan">Diploma in Chemical Engg.</span>
+            <span class="mini-tag mini-tag--rose">Python &amp; Web Dev</span>
+          </div>
+        </div>
+
+        <!-- Stylish Regular-Text Profile & Portrait Card -->
+        <aside class="hero-visual reveal" aria-label="Profile overview">
+          <div class="profile-card glass-card">
+            <div class="profile-portrait-wrap">
+              <img src="images/dhruvil-portrait.jpg" alt="Portrait of Dhruvil Ujjeniya" class="profile-portrait" width="896" height="1200" />
+              <span class="floating-badge floating-badge--top">AI &amp; ML Student</span>
+              <span class="floating-badge floating-badge--bottom">Chem × Tech</span>
+            </div>
+
+            <div class="profile-details">
+              <div class="profile-head">
+                <h2 class="profile-name">Dhruvil Ujjeniya</h2>
+                <p class="profile-role">Gujarat, India · Div DD · Roll 2603842047</p>
+              </div>
+
+              <div class="profile-info-grid">
+                <div class="profile-info-item">
+                  <span class="info-label info-label--indigo">Education</span>
+                  <p class="info-value">Diploma in Chemical Engineering &amp; B.Tech in AIML Engineering (Present)</p>
+                </div>
+                <div class="profile-info-item">
+                  <span class="info-label info-label--cyan">Focus Areas</span>
+                  <p class="info-value">Artificial Intelligence, Machine Learning, Web Development &amp; Computational Science</p>
+                </div>
+                <div class="profile-info-item">
+                  <span class="info-label info-label--emerald">Motto</span>
+                  <p class="info-value">Learn continuously. Experiment fearlessly. Build meaningfully.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--indigo">01 · BACKGROUND</span>
+          <h2 class="section-title">About <span class="text-gradient-indigo">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card reveal">
+            <p class="about-lead">
+              My journey started with an interest in understanding how things work, particularly in science, engineering and technology.
+            </p>
+            <p>
+              With a background in Chemical Engineering, I developed an interest in exploring the relationship between scientific concepts and modern computational technologies. Over time, my curiosity expanded towards Artificial Intelligence, Machine Learning and software development.
+            </p>
+            <p>
+              I am currently exploring programming and web technologies while working towards turning my ideas into practical projects. I believe in continuous learning, experimentation and building things that have a meaningful purpose.
+            </p>
+          </div>
+
+          <div class="about-highlights reveal">
+            <div class="highlight-item glass-card highlight--indigo">
+              <span class="highlight-label label--indigo">Academic Foundation</span>
+              <h3>Diploma in Chemical Engineering</h3>
+              <p>Built analytical problem-solving skills and scientific thinking.</p>
+            </div>
+            <div class="highlight-item glass-card highlight--cyan">
+              <span class="highlight-label label--cyan">Current Degree</span>
+              <h3>B.Tech in AIML Engineering</h3>
+              <p>Presently pursuing Artificial Intelligence &amp; Machine Learning (Roll No: 2603842047, Div: DD).</p>
+            </div>
+            <div class="highlight-item glass-card highlight--rose">
+              <span class="highlight-label label--rose">Ambition</span>
+              <h3>Science × Software × AI</h3>
+              <p>Bridging chemistry, engineering, and intelligent software into real-world tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Arsenal / Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--cyan">02 · CAPABILITIES &amp; LEARNING AREAS</span>
+          <h2 class="section-title">Technical <span class="text-gradient-cyan">Arsenal</span></h2>
+          <p class="section-desc">Core web and programming fundamentals paired with active learning areas in AI and computational science.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <article class="skill-card glass-card reveal" data-accent="indigo">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">⌨️</span>
+              <div>
+                <h3>Programming</h3>
+                <span class="skill-badge skill-badge--active">Practicing</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card reveal" data-accent="cyan">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">🌐</span>
+              <div>
+                <h3>Web Technologies</h3>
+                <span class="skill-badge skill-badge--active">Practicing</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Web Development</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card reveal" data-accent="emerald">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">🤖</span>
+              <div>
+                <h3>Artificial Intelligence</h3>
+                <span class="skill-badge skill-badge--learning">Learning Area</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>AI-powered applications</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card reveal" data-accent="amber">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">⚗️</span>
+              <div>
+                <h3>Scientific Interests</h3>
+                <span class="skill-badge skill-badge--domain">Academic Focus</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>Chemical Engineering</li>
+              <li>Chemistry</li>
+              <li>Computational Science</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--rose">03 · WORK &amp; CONCEPTS</span>
+          <h2 class="section-title">Featured <span class="text-gradient-rose">Projects</span></h2>
+          <div class="project-filters" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="ai-edtech">AI &amp; EdTech</button>
+            <button type="button" class="filter-btn" data-filter="python">Python</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card glass-card reveal" data-category="ai-edtech" data-project-id="chemai">
+            <div class="project-media">
+              <img src="images/chemai-preview.jpg" alt="Abstract illustration of a glowing chemical molecule connected to an AI neural network representing ChemAI" loading="lazy" width="1200" height="896" />
+              <span class="project-num">PROJECT 01</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">AI-powered Chemistry Learning Platform</span>
+              <h3 class="project-title">ChemAI by Dhruvil</h3>
+              <p class="project-desc">
+                ChemAI is an AI-powered chemistry learning platform concept that I envisioned to make chemistry education more interactive, accessible and technology-driven. The project represents my interest in combining Artificial Intelligence, Chemistry and computational technologies.
+              </p>
+              <div class="project-meta">
+                <span><strong>Status:</strong> In Development</span>
+                <span><strong>Focus:</strong> Chemistry Education &amp; AI</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn" data-project-id="chemai">View Project Details</button>
+                <a href="projects/chemai.html" class="btn btn-ghost btn-sm project-ext-link" data-project-link="chemai">Project Page ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card glass-card reveal" data-category="python" data-project-id="hangman">
+            <div class="project-media">
+              <img src="images/hangman-preview.jpg" alt="Minimalist code editor window with colorful Python-inspired blocks representing Interactive Hangman Game" loading="lazy" width="1200" height="896" />
+              <span class="project-num">PROJECT 02</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Python Programming Project</span>
+              <h3 class="project-title">Interactive Hangman Game</h3>
+              <p class="project-desc">
+                An interactive word-guessing game developed using Python programming fundamentals. Allows users to guess a hidden word through individual letter inputs, demonstrating variables, conditional statements, loops and user interaction.
+              </p>
+              <div class="project-meta">
+                <span><strong>Tech:</strong> Python</span>
+                <span><strong>Type:</strong> Interactive CLI Game</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn" data-project-id="hangman">View Project Details</button>
+                <a href="projects/hangman.html" class="btn btn-ghost btn-sm project-ext-link" data-project-link="hangman">Project Page ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Journey Section -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--emerald">04 · TIMELINE</span>
+          <h2 class="section-title">My <span class="text-gradient-emerald">Journey</span></h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker marker--indigo" aria-hidden="true">01</div>
+            <div class="timeline-content glass-card">
+              <h3>Chemical Engineering</h3>
+              <p>Completed a Diploma in Chemical Engineering after secondary education, building a strong foundation in scientific analysis and engineering principles.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker marker--cyan" aria-hidden="true">02</div>
+            <div class="timeline-content glass-card">
+              <h3>Interest in Artificial Intelligence</h3>
+              <p>Developed an interest in combining chemistry, science and artificial intelligence, leading to pursuing B.Tech in AIML Engineering (Present).</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker marker--rose" aria-hidden="true">03</div>
+            <div class="timeline-content glass-card">
+              <h3>ChemAI</h3>
+              <p>Started working towards developing an AI-powered chemistry learning platform concept to make chemistry education more interactive and accessible.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker marker--amber" aria-hidden="true">04</div>
+            <div class="timeline-content glass-card">
+              <h3>Programming Journey</h3>
+              <p>Exploring Python, HTML, CSS and JavaScript through practical projects such as the Interactive Hangman Game and this portfolio.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker marker--emerald" aria-hidden="true">05</div>
+            <div class="timeline-content glass-card">
+              <h3>Future Vision</h3>
+              <p>Aspiring to develop innovative applications using artificial intelligence, engineering and software technologies.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Interests, Philosophy & Future Goals -->
+    <section id="interests" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--amber">05 · MINDSET &amp; DIRECTION</span>
+          <h2 class="section-title">Interests, Philosophy &amp; <span class="text-gradient-indigo">Goals</span></h2>
+        </div>
+
+        <div class="interests-wrap glass-card reveal">
+          <h3 class="subsection-title">Areas of Interest</h3>
+          <div class="interest-pills">
+            <span class="interest-pill pill--indigo">Artificial Intelligence</span>
+            <span class="interest-pill pill--cyan">Machine Learning</span>
+            <span class="interest-pill pill--rose">Educational Technology</span>
+            <span class="interest-pill pill--emerald">Chemistry &amp; Computational Science</span>
+            <span class="interest-pill pill--amber">Software Development</span>
+            <span class="interest-pill pill--violet">Web Technologies</span>
+            <span class="interest-pill pill--indigo">Scientific Innovation</span>
+          </div>
+        </div>
+
+        <div class="vision-grid">
+          <article class="philosophy-card glass-card reveal">
+            <h3 class="subsection-title">My Philosophy</h3>
+            <blockquote class="philosophy-quote">
+              <p class="philosophy-mantra">Learn continuously. Experiment fearlessly. Build meaningfully.</p>
+              <p>
+                I believe that innovation begins with curiosity. Every idea deserves exploration, every challenge provides an opportunity to learn, and every project is a step towards creating something meaningful.
+              </p>
+            </blockquote>
+          </article>
+
+          <article class="goals-card glass-card reveal">
+            <h3 class="subsection-title">What I Aim to Build</h3>
+            <ul class="goals-list">
+              <li>Develop AI-powered educational platforms.</li>
+              <li>Explore applications of AI in chemistry and scientific education.</li>
+              <li>Improve programming and software development skills.</li>
+              <li>Build useful and innovative digital products.</li>
+              <li>Combine engineering knowledge with modern technologies.</li>
+              <li>Continue learning and experimenting with emerging technologies.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker kicker--indigo">06 · REACH OUT</span>
+          <h2 class="section-title">Let's <span class="text-gradient-cyan">Connect</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass-card reveal">
+            <h3>Contact Details</h3>
+            <p class="contact-lead">Open to learning collaborations, student projects, and conversations about AI, chemistry, and web development.</p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Name</span>
+                <span class="contact-val" data-bind="fullName">Dhruvil Ujjeniya</span>
+              </li>
+              <li>
+                <span class="contact-label">Academic ID</span>
+                <span class="contact-val">Roll No: 2603842047 · Division DD</span>
+              </li>
+              <li>
+                <span class="contact-label">Location</span>
+                <span class="contact-val">Gujarat, India</span>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a id="github-link" class="contact-link" href="https://github.com/ujjeniyadhruvil8-star" target="_blank" rel="noopener noreferrer" data-social="github">https://github.com/ujjeniyadhruvil8-star</a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a id="linkedin-link" class="contact-link" href="https://www.linkedin.com/in/dhruvil-ujjeniya-a60389356" target="_blank" rel="noopener noreferrer" data-social="linkedin">linkedin.com/in/dhruvil-ujjeniya-a60389356</a>
+              </li>
+              <li>
+                <span class="contact-label">Email</span>
+                <a id="email-link" class="contact-link" href="mailto:ujjeniyadhruvil8@gmail.com" data-social="email">ujjeniyadhruvil8@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form glass-card reveal" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="fullName" placeholder="Your full name" required autocomplete="name" />
+                <span class="field-error" id="error-full-name" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <span class="field-error" id="error-email-address" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project collaboration, question, or hello" required />
+              <span class="field-error" id="error-subject" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              <span class="field-error" id="error-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Validate &amp; Prepare Message</button>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Dhruvil Ujjeniya</strong>
+        <span>B.Tech AIML (Roll No: 2603842047 · Div: DD) · Gujarat, India</span>
+      </div>
+      <nav class="footer-social" aria-label="Social media navigation">
+        <a href="#contact" data-social="github">GitHub</a>
+        <a href="#contact" data-social="linkedin">LinkedIn</a>
+        <a href="#contact" data-social="email">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog glass-card">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Close project details">✕</button>
+      <span class="section-kicker" id="modal-category"></span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div id="modal-details" class="modal-details"></div>
+      <div id="modal-features-wrap" class="modal-features-wrap" hidden>
+        <h4>Key Features</h4>
+        <ul id="modal-features"></ul>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-repo-link" href="#projects" class="btn btn-primary btn-sm">Open Project Page ↗</a>
+        <button type="button" id="modal-done-btn" class="btn btn-ghost btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
